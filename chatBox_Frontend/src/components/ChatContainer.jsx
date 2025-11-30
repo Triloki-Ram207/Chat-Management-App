@@ -1,6 +1,6 @@
 import React from "react";
 import chatIcon from "../assets/Home/chatIcon.png";
-import "../cssFiles/chatBox.css";
+import "../cssFiles/ChatBox.css";
 import ChatModal from "./ChatModal";
 import closeModal from "../assets/Home/closeModal.png";
 import ChatBotBox from "./ChatBot/ChatBotBox";
