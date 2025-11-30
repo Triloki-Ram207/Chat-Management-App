@@ -1,0 +1,20 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Ignore all node_modules everywhere
+node_modules/
+
+# Ignore all build outputs everywhere
+dist/
+
+# Ignore all environment files
+.env
+.env.*

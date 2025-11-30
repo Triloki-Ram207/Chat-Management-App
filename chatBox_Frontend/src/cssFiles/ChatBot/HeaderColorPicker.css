@@ -1,0 +1,57 @@
+.color-picker-container {
+  font-family: sans-serif;
+  padding: 1rem;
+  max-width: 320px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.color-options {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.color-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+
+.color-circle.selected {
+  border: 2px solid #555;
+}
+
+.hex-input {
+  padding: 16px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.header-color {
+  display: flex;
+  gap: 12px;
+}
+
+.color-preview {
+  height: 50px;
+  width: 70px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.selected-label {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.selected-value {
+  font-weight: bold;
+}

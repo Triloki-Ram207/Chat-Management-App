@@ -1,0 +1,51 @@
+.timer-container {
+  font-family: sans-serif;
+  padding: 1rem;
+  max-width: 320px;
+  width: 100%;
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.dropdown-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin: 1rem 0;
+}
+
+select {
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #f6f7f5;
+  appearance: none;
+  overflow-y: auto;
+  max-height: 120px;
+}
+
+.save-btn-timer {
+  padding: 10px;
+  background-color: #184e7f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 30%;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.save-btn-row {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.save-btn-timer:hover {
+  background-color: #2169b5;
+  transform: scale(1.05);
+}

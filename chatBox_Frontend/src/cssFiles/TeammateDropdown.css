@@ -1,0 +1,64 @@
+.teammate-dropdown {
+  width: 100%;
+  position: relative;
+  font-family: "Segoe UI", sans-serif;
+  margin-bottom: 6px;
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #184e7f;
+}
+
+.info-field input {
+  flex: 1;
+  padding: 12px;
+  cursor: default;
+}
+.avatar-member {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background-color: #ddddddb6;
+}
+
+.icon {
+  font-size: 12px;
+  color: #666;
+  margin-left: auto;
+}
+
+.dropDown-icon {
+  width: 22px;
+  margin-left: 8px;
+  position: absolute;
+  right: 14px;
+}
+
+.dropdown-list {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.dropdown-item {
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}

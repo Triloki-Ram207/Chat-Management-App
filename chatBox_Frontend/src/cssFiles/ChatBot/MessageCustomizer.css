@@ -1,0 +1,44 @@
+.message-customizer-container {
+  font-family: sans-serif;
+  padding: 1rem;
+  max-width: 320px;
+  width: 100%;
+
+  border: 1px solid #ccc;
+
+  border-radius: 8px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.message-box {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.message-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.message-input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.edit-icon {
+  margin-left: 8px;
+  font-size: 1.2rem;
+  cursor: default;
+}
+
+.message-preview {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}

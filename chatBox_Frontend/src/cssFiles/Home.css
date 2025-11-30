@@ -1,0 +1,514 @@
+* {
+  box-sizing: border-box;
+}
+
+.home-container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to right, #e6f2ff, #ffffff);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 85%;
+  display: flex;
+  margin: 0px auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-home {
+  background: none;
+  color: #333;
+  padding: 12px 16px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: 1px solid #666869;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-home:hover {
+  background-color: #244779;
+  color: white;
+}
+
+.intro-Container {
+  padding: 23px;
+  background: linear-gradient(to right, #e6f2ff, #ffffff);
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin-top: 20px;
+}
+
+.promo-content {
+  max-width: 670px;
+  margin-top: 40px;
+  height: fit-content;
+}
+
+.promo-title {
+  font-size: 54px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+}
+
+.promo-subtitle {
+  font-size: 17px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.promo-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.get-started-btn {
+  color: black;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 1px solid rgb(90, 88, 88);
+  font-weight: 600;
+}
+
+.arrow {
+  margin-left: 8px;
+}
+
+.play-icon {
+  margin-right: 8px;
+  width: 40px;
+  color: red;
+}
+
+.get-started-btn:hover {
+  background-color: #244779;
+  color: white;
+}
+
+.watch-video-btn {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: 1px solid rgb(90, 88, 88);
+  color: #0d0d0e;
+  padding: 6px 12px;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.watch-video-btn:hover {
+  background-color: #244779;
+  color: white;
+  border: 1px solid #38d3e7;
+}
+
+.watch-video-btn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* first image visible by default */
+.play-icon:first-of-type {
+  display: inline-block;
+}
+
+/* second image hidden by default */
+.play-icon:last-of-type {
+  display: none;
+}
+
+/* swap on hover */
+.watch-video-btn:hover .play-icon:first-of-type {
+  display: none;
+}
+
+.watch-video-btn:hover .play-icon:last-of-type {
+  display: inline-block;
+}
+
+
+.dashboard-section {
+  position: relative;
+  width: 490px;
+  height: 578px;
+}
+
+.discussion-image {
+  width: 88%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.notification {
+  position: absolute;
+  top: 0;
+  right: 16px;
+  transform: translate(0, -40px);
+  z-index: 20;
+}
+
+.calendar-widget {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(-60px, -10px);
+  z-index: 20;
+}
+
+.sales-widget {
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  transform: translate(100px, -60px);
+  overflow: hidden;
+  z-index: 20;
+}
+
+.discussion-gradient {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: rgba(63, 120, 170, 0.3);
+  box-shadow: 0 0 120px 60px rgba(63, 120, 170, 0.3);
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(12px, -10px);
+  z-index: 1;
+}
+
+.frame {
+  width: 100%;
+  overflow: hidden;
+}
+
+.frame img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.hubly-features {
+  font-family: "Segoe UI", sans-serif;
+  padding: 40px;
+  background-color: #f9f9f9;
+  color: #333;
+  width: 85%;
+  margin: auto;
+}
+
+.hubly-intro {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.hubly-title {
+  font-size: 38px;
+  font-weight: 700;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.hubly-description {
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: auto;
+  width: 70%;
+}
+
+.hubly-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hubly-funnel-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.funnel-heading {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #101113;
+  font-weight: 500;
+}
+
+.funnel-description {
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.hubly-funnel-images {
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.funnel-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.feature1 {
+  position: absolute;
+  top: 0;
+  transform: translate(65px, -12px);
+}
+
+.feature-gradient {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  background-color: rgba(100, 115, 126, 0.26);
+  box-shadow: 0 0 120px 80px rgba(63, 120, 170, 0.3);
+  z-index: 777;
+}
+
+.plans-section {
+  padding: 60px 20px;
+  background-color: #f0f4f8;
+  font-family: "Segoe UI", sans-serif;
+  text-align: center;
+  width: 85%;
+  margin: auto;
+}
+
+.plans-header {
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.plans-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #101113;
+}
+
+.plans-subtext {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  width: 67%;
+  margin: auto;
+}
+
+.plans-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 60px 40px;
+  background-color: #f9f9f9;
+  font-family: "Segoe UI", sans-serif;
+  position: relative;
+  width: 85%;
+  margin: auto;
+}
+
+.footer-logo {
+  flex: 1;
+  min-width: 150px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.footer-logo img {
+  max-width: 120px;
+}
+
+.footer-links {
+  flex: 3;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-social {
+  position: absolute;
+  min-width: 130px;
+  display: flex;
+  align-items: flex-end;
+  bottom: 110px;
+  right: 10px;
+  margin-right: 40px;
+}
+
+@media (max-width: 992px) {
+  .header {
+    width: 95%;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .intro-Container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 95%;
+    border: 2px solid red;
+  }
+
+  .promo-title {
+    font-size: 42px;
+  }
+
+  .dashboard-section {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    position: relative;
+  }
+
+  .discussion-image {
+    position: static;
+    width: 100%;
+  }
+
+  .notification,
+  .calendar-widget,
+  .sales-widget,
+  .discussion-gradient {
+    position: static;
+    transform: none;
+    margin: 20px auto;
+  }
+
+  .hubly-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 95%;
+  }
+
+  .footer-social {
+    position: static;
+    margin: 20px auto 0;
+  }
+
+  .discussion-gradient,
+  .feature-gradient {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .promo-title {
+    font-size: 32px;
+  }
+
+  .promo-subtitle {
+    font-size: 15px;
+  }
+
+  .btn-home,
+  .get-started-btn,
+  .watch-video-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .watch-video-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .promo-buttons {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .hubly-title {
+    font-size: 28px;
+    width: 100%;
+  }
+
+  .hubly-description {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .plans-title {
+    font-size: 24px;
+  }
+
+  .plans-subtext {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-logo img {
+    max-width: 90px;
+  }
+}

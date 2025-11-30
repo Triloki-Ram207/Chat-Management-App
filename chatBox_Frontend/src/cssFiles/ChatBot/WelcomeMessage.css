@@ -1,0 +1,59 @@
+.welcome-container {
+  font-family: sans-serif;
+  padding: 1rem;
+  max-width: 420px;
+  width: 100%;
+  border: 1px solid rgb(189, 182, 182);
+  border-radius: 8px;
+}
+
+.message-box {
+  background-color: #F6F7F5;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.message-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 6px;
+}
+
+.char-count {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.message-row {
+  display: flex;
+  align-items: flex-start;
+}
+
+.message-input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.message-textarea {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  resize: none;
+  min-height: 60px;
+  line-height: 1.4;
+  font-family: inherit;
+}
+
+.edit-icon {
+  margin-left: 8px;
+  font-size: 1.2rem;
+  cursor: default;
+  margin-top: 4px; 
+}

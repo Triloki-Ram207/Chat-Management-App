@@ -1,0 +1,53 @@
+.intro-form {
+  width: 300px;
+  gap: 6px;
+  padding: 0 20px;
+  padding-bottom: 10px;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  position: relative;
+}
+
+.intro-form label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #555;
+}
+
+.intro-form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.submit-btn {
+  margin-top: 10px;
+  padding: 12px;
+  background-color: #184e7f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+}
+
+.error-text {
+  color: red;
+  font-size: 0.8rem;
+  position: absolute;
+  right: 26px;
+}
+.name-error {
+  top: 24%;
+}
+
+.phone-error {
+  bottom: 42%;
+}
+
+.email-error {
+  bottom: 60px;
+}

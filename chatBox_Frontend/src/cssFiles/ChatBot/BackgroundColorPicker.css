@@ -1,0 +1,53 @@
+.bg-picker-container {
+  font-family: sans-serif;
+  padding: 1rem;
+  max-width: 320px;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+.bg-color-options {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.bg-color-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+
+.bg-color-circle.selected {
+  border: 2px solid #555;
+}
+
+.bg-hex-input {
+  padding: 16px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.bg-color-preview {
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.background-color {
+  display: flex;
+  gap: 12px;
+}
+
+.bg-selected-label {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.bg-selected-value {
+  font-weight: bold;
+}

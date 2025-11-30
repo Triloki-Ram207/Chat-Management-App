@@ -1,0 +1,27 @@
+.footer-card {
+  background-color: #f9f9f9;
+  padding: 6px 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  max-width: 300px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #256CB5;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-item {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #333;
+}
