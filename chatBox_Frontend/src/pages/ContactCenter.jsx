@@ -150,7 +150,7 @@ function ContactCenter() {
                     }`}
                     key={ticket._id}
                   >
-                    <div className="chat-avatar">
+                    <div className="chat-avatar-center">
                       {ticket.userId?.name
                         ?.split(" ")
                         .map((word) => word[0])
@@ -164,7 +164,7 @@ function ContactCenter() {
                       <div className="chat-preview">
                         {member.role === "admin" &&
                         ticket?.assignedTo.length > 1 ? (
-                          <p>no longer access</p>
+                          <p className="no-longer-access-to-chat">no longer access</p>
                         ) : (
                           <>
                             {ticket.messages?.[ticket.messages.length - 1]
@@ -220,7 +220,7 @@ function ContactCenter() {
                           <div className="msgFromAdmin">
                             <div className="AdminNameAndChat">
                               <p className="adminMember-name">
-                                {msg.senderInfo.name}
+                                {msg?.senderInfo?.name}
                               </p>
                               <p className="adminMember-msg">{msg.text}</p>
                             </div>
