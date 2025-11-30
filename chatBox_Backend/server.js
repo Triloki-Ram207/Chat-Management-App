@@ -9,20 +9,29 @@ import settingsRoutes from './routes/settingsRoutes.js';
 import cors from 'cors';
 import './utils/markMissedChat.js'
 
-const allowedOrigins = process.env.ALLOWED_ORIGINS.split(",");
-
 dotenv.config();
 const app = express();
-app.use(cors({
-  origin: (origin, callback) => {
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error("Not allowed by CORS"));
-    }
-  },
-  credentials: true
-}));
+
+
+const allowedOrigins = process.env.ALLOWED_ORIGINS
+  ? process.env.ALLOWED_ORIGINS.split(",")
+  : [];
+
+app.use(
+  cors({
+    origin: function (origin, callback) {
+      // Allow requests with no origin (like mobile apps, curl)
+      if (!origin) return callback(null, true);
+      if (allowedOrigins.includes(origin)) {
+        return callback(null, true);
+      } else {
+        return callback(new Error("Not allowed by CORS"));
+      }
+    },
+    credentials: true,
+  })
+);
+
 const PORT = process.env.PORT || 5000;
 app.use(express.json());
 connectDB();
