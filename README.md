@@ -147,6 +147,7 @@ Admin Name:"Triloki ram
 
 Admin Email: trilokiram207@gmail.com
 
+Password:qwerty
 
 Admin Role: Full access (cannot be deleted, only one Admin account exists)
 
