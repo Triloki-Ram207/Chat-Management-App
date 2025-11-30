@@ -9,7 +9,6 @@ export const ENDPOINTS = {
   },
   HOME: {
     USER: `${BASE_URL}/createUser`,
-    // MESSAGES: `${BASE_URL}/messages`,
   },
   ANALYTICS: {
     GET: `${BASE_URL}/analytics`,
