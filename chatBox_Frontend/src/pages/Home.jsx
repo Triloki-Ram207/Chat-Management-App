@@ -13,7 +13,7 @@ import footerIcon from "../assets/Home/footer.png";
 import playButton from "../assets/Home/playButton.png";
 import watchBtn from "../assets/Home/watch-btn-white.png";
 import { useNavigate } from "react-router-dom";
-import "../cssFiles/chatBox.css";
+import "../cssFiles/ChatBox.css";
 import ChatContainer from "../components/ChatContainer";
 import { useState, useEffect } from "react";
 import Form from "../components/ChatBot/Form";
