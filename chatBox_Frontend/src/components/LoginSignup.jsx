@@ -1,5 +1,5 @@
 import React from "react";
-import frame from "../assets/frame.png";
+import frame from "../assets/Frame.png";
 import hubly from "../assets/Home/hubly.png";
 import LoginForm from "../components/LoginForm";
 import SignupForm from "../components/SignupForm";
