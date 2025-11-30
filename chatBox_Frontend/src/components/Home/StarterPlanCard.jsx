@@ -1,6 +1,6 @@
 import React from "react";
 import "../../cssFiles/StarterPlanCard.css";
-import checkIcon from "../../assets/Home/check icon.png";
+import checkIcon from "../../assets/Home/Check icon.png";
 
 const StarterPlanCard = ({ title, subtitle, price, features, buttonText }) => {
   return (
