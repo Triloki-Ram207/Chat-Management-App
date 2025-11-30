@@ -143,11 +143,10 @@ Integrated chat box for users to directly chat with Admin or Team Members.
 👨‍💼 Admin Details
 This section is reserved for documenting the Admin account information. Fill in the details when setting up the system:
 
-Admin Name: __________
+Admin Name:"Triloki ram
 
-Admin Email: __________
+Admin Email: trilokiram207@gmail.com
 
-Admin Phone: __________
 
 Admin Role: Full access (cannot be deleted, only one Admin account exists)
 
@@ -163,3 +162,17 @@ Analytics for tracking performance
 Customization options for chat UI
 
 Team management with role-based access
+
+## 🌐 Hosted Links
+
+- **Frontend (User Landing Page + Dashboard)**  
+  👉 [https://chat-management-app.vercel.app](https://chat-management-app.vercel.app)
+
+- **Backend API (Render)**  
+  👉 [https://chat-management-app.onrender.com](https://chat-management-app.onrender.com)
+
+### Example Endpoints
+- Signup: `POST https://chat-management-app.onrender.com/api/v1/signup`
+- Login: `POST https://chat-management-app.onrender.com/api/v1/login`
+- Tickets: `GET https://chat-management-app.onrender.com/api/v1/tickets`
+
