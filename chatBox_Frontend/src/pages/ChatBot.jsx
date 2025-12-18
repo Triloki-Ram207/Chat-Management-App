@@ -1,7 +1,6 @@
-import React, { useEffect} from "react";
+import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import {
-  fetchChatBoxConfig,
   saveChatBoxConfig,
 } from "../stateManagement/chatBoxSlice";
 
@@ -28,10 +27,6 @@ function ChatBot() {
     missedChatTimer,
     loading,
   } = useSelector((state) => state.chatBox);
-
-  useEffect(() => {
-    dispatch(fetchChatBoxConfig());
-  }, [dispatch]);
 
   if (loading) {
     return (

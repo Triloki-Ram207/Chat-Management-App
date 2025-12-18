@@ -10,9 +10,18 @@ import Analytics from "./pages/Analytics";
 import ChatBot from "./pages/ChatBot";
 import Teams from "./pages/Team";
 import Settings from "./pages/Settings";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { fetchChatBoxConfig } from "./stateManagement/chatBoxSlice";
+
 
 function App() {
+    const dispatch = useDispatch();
 
+    useEffect(() => {
+      dispatch(fetchChatBoxConfig());
+    }, [dispatch]);
+    
   return (
     <Routes>
       {/* Public routes */}
